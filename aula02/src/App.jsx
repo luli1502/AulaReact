@@ -1,6 +1,10 @@
 import "./App.css";
+import React from "react";
 import Exemplo1 from "./Exemplo1";
 import Exercicio1 from "./exercicio1";
+import Exercicio2 from "./exercicio2";
+import Exercicio3 from "./exercicio3";
+
 export default function App()
 {
   return (
@@ -25,6 +29,14 @@ export default function App()
         <hr />
         <Exercicio2 peso={60} altura={1.60}/>
       </div>
+
+      <div className="card">
+        <h3>Exercício 3</h3>
+        <Exercicio3 nota1="7.5" nota2="9.5" />
+        <Exercicio3 nota1="3" nota2="6.5"/>
+      </div>
     </div>
   )
 }
+
+  
