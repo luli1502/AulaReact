@@ -1,9 +1,10 @@
 import "./App.css";
-import React from "react";
-import Exemplo1 from "./Exemplo1";
+import Exemplo1 from "./exemplo1";
 import Exercicio1 from "./exercicio1";
 import Exercicio2 from "./exercicio2";
 import Exercicio3 from "./exercicio3";
+import Exercicio4 from "./exercicio4";
+import Exercicio5 from "./exercicio5";
 
 export default function App()
 {
@@ -31,12 +32,38 @@ export default function App()
       </div>
 
       <div className="card">
-        <h3>Exercício 3</h3>
-        <Exercicio3 nota1="7.5" nota2="9.5" />
-        <Exercicio3 nota1="3" nota2="6.5"/>
+      <h3>Exercicio3</h3>
+      <Exercicio3 nota1 ={7.5} nota2={9.5}/>
+      <hr />
+      <Exercicio3 nota1 ={3} nota2={6.5}/>
+      <hr />
+
       </div>
-    </div>
+      <div className="card">
+      <h3> Exercício 4</h3>
+      <Exercicio4 tipo="retangulo" base={10} altura={5} />
+      <Exercicio4 tipo="triangulo" base={10} altura={5} />
+      <Exercicio4 tipo="quadrado" base={10} altura={10} />
+      
+      </div>
+      <div className="card">
+       <hr />
+      <h3> Exercício 5</h3>
+      <Exercicio5 quantidade={10} />
+      <hr />
+      <Exercicio5 quantidade={20} />
+     </div>
+
+     <div className="card">
+       <hr />
+      <h3> Exercício 6</h3>
+      <Exercicio6 capital={1000} />
+      <hr />
+      <Exercicio6 taxa={5} />
+      <Exercicio6 taxa={6} />
+     </div>
+ 
+      </div>
+      
   )
 }
-
-  
