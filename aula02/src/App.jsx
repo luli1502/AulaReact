@@ -5,6 +5,11 @@ import Exercicio2 from "./exercicio2";
 import Exercicio3 from "./exercicio3";
 import Exercicio4 from "./exercicio4";
 import Exercicio5 from "./exercicio5";
+import Exercicio6 from "./exercicio6";
+import Exercicio7 from "./exercicio7";
+import Exercicio9 from "./exercicio9";
+import Exercicio10 from "./exercicio10";
+
 
 export default function App()
 {
@@ -62,7 +67,25 @@ export default function App()
       <Exercicio6 taxa={5} />
       <Exercicio6 taxa={6} />
      </div>
- 
+
+     <div className="card">
+      <h3>Exercicío 7</h3>
+      <Exercicio7 celsius={30} />
+      <Exercicio7 celsius={20} />
+      <Exercicio7 celsius={39.5} />
+     </div>
+
+     <div className="card">
+      <h3>Exercício 9</h3>
+      <Exercicio9 vendas={5000} salario={2000} />
+      <Exercicio9 vendas={8000} salario={2500} />
+     </div>
+
+     <div className="card">
+     <h3>Exercício 10</h3>
+     <Exercicio10 salario={2500} />
+     <hr />
+     </div>
       </div>
       
   )
