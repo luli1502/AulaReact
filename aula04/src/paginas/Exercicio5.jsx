@@ -1,38 +1,39 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-export default function Exercicio2() {
-    const [fah, setFah] = useState();
+export default function Exercicio5() {
+    const [lado, setLado] = useState();
     const [resultado, setResultado] = useState();
 
     function calcular() {
-        let celsius;
+        let area;
 
-        celsius = (Number(fah) - 32) * 5 / 9;
+        area = Number(lado) * Number(lado);
 
         setResultado(
             <div>
-                Celsius = {celsius}
+                Área = {area}
             </div>
         );
     }
 
     return (
         <div>
-            <h1>Exercício 2</h1>
+            <h1>Exercício 5</h1>
+
             <div className="conteudo">
 
-                
             <form>
                     <p>
-                        Digite a temperatura em Fahrenheit <br />
-                        <input type="text"
-                            value={fah}
-                            onChange={ (e) => setNumero( e.target.value ) }
-                        />
+                    Digite o valor do lado do quadrado
                     </p>
-
-                    <p>
+                    <input type="text"
+                    value={lado}
+                    onChange={(e) => setQuantidade(e.target.value)}
+                    />
+                    
+                
+                <p>
                         <input type="button" value="Calcular" onClick={calcular} />
                     </p>
 
@@ -50,4 +51,3 @@ export default function Exercicio2() {
         </div>
     );
 }
-          
